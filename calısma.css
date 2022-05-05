@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    width: 90vw;
+
+}
+.panel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    flex: 0.5;
+    position: relative;
+    border-radius: 35px;
+    margin: 5px;
+    transition: flex 0.8s ease-in;
+}
+
+.panel h3{
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    font-size: 3rem;
+    color: rgb(61, 48, 94);
+    opacity: 0;
+    transition: 0.3s ease-in 0.4s;
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+}
